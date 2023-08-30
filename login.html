@@ -71,28 +71,38 @@
                 </div>
             </div>
         </section>
-        <div class="container">
-            <div class="login-container">
-                <h2>Login</h2>
-                <form class="login-form">
-                    <div class="input-group">
-                        <label for="username">Usuário</label>
-                        <input type="text" id="username" name="username" required>
+    
+        <!-- Tela de login -->
+
+        <section class="painel-login">
+            <div class="container">
+                <div class="registro">
+                    <h1>Registra-se</h1>
+                    <p>Caso não tenha uma conta clique no botão abaixo.</p>
+                    <button>Registrar</button>
+                </div>
+                <div class="linha"></div>
+                <div class="login">
+                    <div class="description">
+                        <h1>Login</h1>
+                        <p>Seja bem vindo(a) de volta!</p>
                     </div>
-                    <div class="input-group">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" name="password" required>
+                    <div class="inputs">
+                        <input type="text" name="email" id="email" placeholder="Digite seu email" autocomplete="off" >
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                        <span class="erro hidden"></span>
+                        <button type="submit" id="enviar">Entrar</button>
                     </div>
-                    <button type="submit">Entrar</button>
-                </form>
-                <p><span></span></p>
+                </div>
             </div>
-        </div>
+
+        </section>
     </main>
 
     <!-- Links -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/colors.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
